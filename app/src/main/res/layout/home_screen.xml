@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_gravity="left"
+        android:src="@drawable/wells_mortgage"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="18dp"
+        android:elevation="8dp"
+        />
+
+    <Button
+        android:layout_width="370dp"
+        android:layout_height="82dp"
+        android:text="Augmented Reality Search"
+        android:drawableLeft="@drawable/aug_reality"
+        android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+        android:id="@+id/arSearch_button"
+        android:gravity="start|center"
+        android:layout_margin="12dp"
+        android:drawablePadding="4dp"
+        android:elevation="8dp"
+        />
+
+    <Button
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:text="Map Search"
+        android:drawableLeft="@drawable/map"
+        android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+        android:id="@+id/mapSearch_button"
+        android:gravity="start|center"
+        android:layout_margin="12dp"
+        android:drawablePadding="4dp"
+        android:elevation="8dp"
+        />
+
+    <Button
+        android:layout_width="370dp"
+        android:layout_height="82dp"
+        android:text="Advanced Search"
+        android:drawableLeft="@drawable/advanced_search"
+        android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+        android:id="@+id/advancedSearch_Button"
+        android:gravity="start|center"
+        android:drawablePadding="4dp"
+        android:layout_margin="12dp"
+        android:elevation="8dp"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/calcs"
+            android:src="@drawable/calculator"
+            android:elevation="8dp"
+        />
+
+         <TextView
+                android:layout_width="102dp"
+                android:layout_height="53dp"
+                android:text="@string/calcs"
+             android:textAlignment="gravity"
+             android:gravity="center|center_vertical" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="24dp"
+            >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/rates"
+                android:src="@drawable/mortgage_rates"
+                android:elevation="8dp"
+           />
+
+            <TextView
+                android:layout_width="102dp"
+                android:layout_height="53dp"
+
+                android:text="@string/rates"
+
+                android:textAlignment="gravity"
+                android:gravity="center|center_vertical"
+                  />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="4dp"
+            >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/phone"
+                android:src="@drawable/phone_contact"
+                android:elevation="8dp"
+                />
+
+            <TextView
+                android:layout_width="102dp"
+                android:layout_height="53dp"
+                android:text="@string/contact_hmc"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="18dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/equal_housing"
+
+            />
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Equal Housing Lender"
+        android:gravity="center"
+        android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+
+        />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qualcomm.vuforia.samples.VideoPlayback">
+
+    <uses-feature android:glEsVersion="0x00020000" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:icon="@drawable/wells_icon"
+        android:label="@string/app_name"
+        android:description="@string/app_description"
+        android:launchMode="singleTask"
+        android:allowBackup="true"
+        android:theme="@style/SampleAppsTheme"
+        >
+
+        <!--
+         NOTE: The values in 'android:configChanges' ensure that Android will
+         not destroy and re-create the activity when the user flips the
+         keyboard, changes the orientation of the device, or the actual or
+         physical screen resolution changes, but calls the Activity's
+         onConfigurationChanged() function instead.
+
+         NOTE 2: In order to prevent automatic reactions to orientation
+         changes in addition to setting proper values for
+         'android:configChanges', you also must explicitly specify the screen
+         orientation used by the application, either by setting the attribute
+         'android:screenOrientation' or in code by calling
+         Activity.setRequestedOrientation().
+       -->
+        <!-- Splash Screen Activity -->
+
+        <activity
+            android:name=".ui.ActivityList.ActivitySplashScreen"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:noHistory="true"
+            android:theme="@style/SampleAppsTheme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.ActivityList.AboutScreen"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/SampleAppsTheme"
+            >
+        </activity>
+
+        <activity
+            android:name=".ui.ActivityList.HomeScreen"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/SampleAppsTheme"
+            >
+        </activity>
+
+        <activity
+            android:name=".app.VideoPlayback.VideoPlayback"
+            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
+            android:theme="@style/SampleAppsTheme"
+            android:launchMode="singleTask"
+
+            />
+        <!--
+            This is the activity that holds the full screen media player.
+        -->
+        <activity android:label="@string/app_name"
+            android:name=".app.VideoPlayback.FullscreenPlayback"
+            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/SampleAppsTheme"
+            android:exported="false">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+
+</manifest>

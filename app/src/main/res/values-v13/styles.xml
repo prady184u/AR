@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<style name="SampleAppsTheme1" parent="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!--<item name="android:buttonStyle">@style/CKButton</item>-->
+        <!--<item name="android:imageButtonStyle">@style/CKButton</item>-->
+        <!--<item name="android:background">#bfc0be</item>-->
+    <!--</style>-->
+
+    <!-- Base application theme. -->
+    <style name="SampleAppsTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+
+        <item name="android:windowBackground">@color/white_opaque</item>
+
+    </style>
+
+
+
+    <style name="CKButton" parent="android:style/Widget.Button">
+        <item name="android:textSize">19sp</item>
+        <item name="android:layout_margin">0dip</item>
+        <item name="android:background">@drawable/gradient</item>
+
+    </style>
+
+
+</resources>
